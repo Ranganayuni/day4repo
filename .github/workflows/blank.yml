@@ -19,7 +19,7 @@ jobs:
         with:
           subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION }}
           resourceGroupName: rg_03
-          template: ./azuredeploy.yml
+          template: ./akhitemp.bicep
           parameters: storageAccountType=Standard_LRS
 
         # output containerName variable from template
