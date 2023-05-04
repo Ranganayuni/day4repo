@@ -20,6 +20,6 @@ jobs:
           subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION }}
           resourceGroupName: rg_03
           template: ./akhitemp.bicep
-          parameters:adminusername=Akhila adminpassword=Akhi@333
+          parameters: adminusername=Akhila adminpassword=Akhi@333
         # output containerName variable from template
       - run: echo ${{ steps.deploy.outputs.containerName }}
