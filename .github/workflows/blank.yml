@@ -18,7 +18,7 @@ jobs:
         uses: azure/arm-deploy@v1
         with:
           subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION }}
-          resourceGroupName: rg)_03
+          resourceGroupName: rg_03
           template: ./azuredeploy.json
           parameters: storageAccountType=Standard_LRS
 
