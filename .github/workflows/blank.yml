@@ -19,8 +19,8 @@ jobs:
         with:
           subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION }}
           resourceGroupName: rg_03
-          template: ./azuredeploy.json
-          parameters: storageAccountType=Standard_LRS
+          template: ./bicepdeploy.yml
+          parameters: adminusername=Akhila adminpassword=Akhi@333
 
         # output containerName variable from template
       - run: echo ${{ steps.deploy.outputs.containerName }}
